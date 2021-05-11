@@ -1,0 +1,128 @@
+/*
+Name: Dillon Barr
+File: threadStyle.css
+Course: CSC 337
+Assignment: Final Project
+Purpose: This file contains the css used to style the viewThread.html page
+*/
+html {
+    min-height: 100%;
+    overflow-y: auto;
+}
+body {
+    overflow-y: auto;
+    margin: 0;
+    background-color: gray;
+}
+
+.bannerPics {
+    position: fixed;
+    height: 15%;
+    width: 25%;
+}
+
+#nintendo {
+    margin-left: 0;
+}
+
+#xbox {
+    margin-left: 25%;
+}
+
+#playstation {
+    margin-left: 50%;
+}
+
+#pc {
+    right: 0;
+}
+
+#sideBar {
+    text-align: center;
+    font-size: 35px;
+    position: fixed;
+    left: 0%;
+    top: 20%;
+    width: 20%;
+    height: 100%;
+    background-color: rgb(133, 133, 141);
+    border: 2px solid black;
+}
+
+#main {
+    font-size: 30px;
+    position: fixed;
+    left: 20.2%;
+    top: 20%;
+    height: 100%;
+    width: 80%;
+    overflow-y: auto;
+    background-color: rgb(133, 133, 141);
+    border: 2px solid black;
+}
+
+#loginBox {
+    color: white;
+    padding-left: 10px;
+    padding-top: 15px;
+    position: fixed;
+    right: 0;
+    top: 20.2%;
+    width: 15%;
+    height: 15%;
+    background-color: rgb(24, 14, 24);
+}
+
+#original {
+    position: absolute;
+    left: 10%;
+    top: 2%;
+    height: 30%;
+    width: 60%;
+    overflow-y: auto;
+    background-color: lightgray;
+    border: 2px dashed black;
+}
+
+#comment {
+    position: absolute;
+    left: 10%;
+    top: 35%;
+    width: 60%;
+}
+
+#commentBlock {
+    top: 60%;
+    left: 10%;
+    overflow-y: auto;
+    position: absolute;
+}
+   
+
+#commentButtonArea {
+    position: absolute;
+    left: 10%;
+    top: 53%;
+}
+
+ #commentButton {
+    border: 2px solid black;
+    font-size: 30px;
+ }
+
+ .comments {
+
+    border: 2px solid black;
+    overflow-y: auto;
+
+}
+
+
+ #post, #newThread {
+     margin-top: 25px;
+     margin-left: 4.5%;
+ }
+
+ #newThread {
+     font-size: 35px;
+ }

@@ -1,0 +1,77 @@
+/*
+Name: Dillon Barr
+File: style.css
+Class: CSC 337
+Purpose: This file contains the CSS used to style the TranslatorV2 part of PA7.
+*/
+
+body {
+    margin: 0;
+}
+
+#top {
+    font-size: 75px;
+    position: fixed;
+    background-color: yellow;
+    display: inline-block;
+    text-align: center;
+    height: 33%;
+    width: 100%;
+}
+
+#input {
+    border: 2px solid black;
+    position: fixed;
+    background-color: gray;
+    top: 33%;
+    left: 0;
+    text-align: center;
+    height: 66%;
+    width: 50%;
+}
+
+#output {
+    border: 2px solid black;
+    position: fixed;
+    background-color: gray;
+    top: 33%;
+    right: 0;
+    text-align: center;
+    height: 66%;
+    width: 50%;
+}
+
+#inputLanguage{
+    margin-top: 5%;
+    position: fixed;
+    left: 10%;
+    font-size: 60px;
+}
+
+#outputLanguage{
+    margin-top: 5%;
+    margin-bottom: 2%;
+    position: fixed;
+    left: 60%;
+    font-size: 60px;
+}
+
+#inputArea {
+    font-weight: bold;
+    font-size: 25px;
+    left: 10%;
+    position: fixed;
+    bottom: 3%;
+    height: 40%;
+    width: 30%;
+}
+
+#outputArea {
+    font-weight: bold;
+    font-size: 25px;
+    position: fixed;
+    left: 60%;
+    bottom: 3%;
+    height: 40%;
+    width: 30%;
+}

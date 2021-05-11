@@ -1,0 +1,38 @@
+<!--
+Name: Dillon Barr
+File: index.html
+Class: CSC 337
+Purpose: This file contains the html used to display the content on the TranslatorV2 site needed for PA7. It
+contains 3 distinct sections of the site, a header, an input portion and an output portion.    
+-->
+
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title> Translator </title>
+        <meta charset="UTF-8">
+        <link rel = "stylesheet" type = "text/css" href = "css/style.css">
+        <script src = "js/translatorFunctions.js"></script>
+    </head>
+    <body>
+        <div id = "top">
+            <h1> Translator </h1>
+        </div>
+        <div id = "input">
+            <select name = "inputLanguage" id = "inputLanguage">
+                <option value = "e">English</option>
+                <option value = "s">Spanish</option>
+                <option value = "g">German</option>
+            </select>
+            <textarea id = "inputArea" onkeyup="saveData()" rows="4" cols="12"></textarea>
+        </div>
+        <div id = "output">
+            <select name = "outputLanguage" id = "outputLanguage">
+                <option value = "e">English</option>
+                <option value = "s">Spanish</option>
+                <option value = "g">German</option>
+            </select>
+            <textarea id = "outputArea" rows="4" cols="12"></textarea>
+        </div>
+    </body>
+</html>

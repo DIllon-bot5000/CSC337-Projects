@@ -1,0 +1,121 @@
+/*
+Name: Dillon Barr
+File: styleA.css
+Class: CSC 337 Web Programming
+Purpose: This is the css file used to satisfy the requirements for style A. The header, nav bar
+and content are all fixed position, the screen is full, only the main content scolls, text wraps and the
+logo is aligned to the top left while the name and logo are top right.
+
+Any feedback you can give me on better style, implementation, code redundancies, etc would be 
+greatly appreciated. I am still trying to get the hang out this all.
+*/
+
+body {
+  margin: 0;
+  }
+
+#pricecoLogo {
+  top: 0px;
+  left: 0px;
+  height: 20%;
+  width: 10%;
+  position: fixed;
+  align: left;
+  display: inline-block;
+  }
+
+
+#header {
+  top: 0px;
+  right: 0px;
+  position: fixed;
+  background-color: rgb(6,108,191);
+  color: yellow;
+  font-size: 20px;
+  text-align: right;
+  overflow: hidden;
+  overflow-wrap: break-word; 
+  display: inline-block;
+  width: 90%;
+  height: 20%
+  }
+
+.navButton {
+  display: block;
+  font-size: 20px;
+  margin-right: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  }
+
+#navigation {
+  left: 0px;
+  bottom: 0px;
+  width: 30%;
+  height: 80%;
+  position: fixed;
+  display: inline-block;
+  background-color: rgb(87, 195, 235);
+  text-align: right;
+  }
+
+#content {
+  background-color: rgb(114, 215, 252);
+  bottom: 0px;
+  right: 0px;
+  height: 80%;
+  width: 70%;
+  position: fixed;
+  display: inline-block;
+  text-align: center; 
+  overflow: scroll;
+  font-weight: bold;
+  font-size: 20px;
+  }
+
+.productImg {
+  text-align: center;
+  }
+
+.styleButton {
+  background-color: grey;
+  color: black;
+  position: fixed;
+  text-align: center;
+  vertical-align: center;
+  padding-left: 2%;
+  padding-right: 2%;
+  opacity: 0.6;
+}
+
+#styleA {
+  bottom: 0px;
+  left: 0px;
+  display: inline-block;
+  padding-top: 25px;
+  height: 50px;
+  width: 50px;
+  margin: 10px;
+  
+}
+
+#styleB { 
+  bottom: 0px;
+  left: 150px;
+  display: inline-block;
+  padding-top: 25px;
+  height: 50px;
+  width: 50px;
+  margin: 10px;
+}
+
+#styleC {
+  bottom: 0px;
+  left: 300px;
+  display: inline-block;
+  padding-top: 25px;
+  height: 50px;
+  width: 50px;
+  margin: 10px;
+}
+

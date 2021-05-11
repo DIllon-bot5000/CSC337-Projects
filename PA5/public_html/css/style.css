@@ -1,0 +1,90 @@
+/*
+Name: Dillon Barr
+File: index.html
+Assignment: PA5 Welcome to the Jumble
+Class: CSC 337 Web Programming
+Purpose: This file contains the css used to style the required
+elements for PA5. There are 3 distinct sections, a top, bottom and side area.
+There is a stylized table used to display the square cipher, customized fonts,
+colors and text emphasis.
+*/
+body {
+  margin: 0%;
+  }
+
+#top {
+  text-align: center;
+  position: fixed;
+  height: 50%;
+  width: 66%;
+  top: 0%;
+  left: 33%;
+  background-color: green;
+  font-family: "Courier";
+  font-size: 60px;
+  font-weight: bold;
+  word-wrap: break-word;
+  }
+
+#bottom {
+  text-align: center;
+  position: fixed;
+  height: 50%;
+  width: 66%;
+  bottom: 0%;
+  left: 33%;
+  background-color: lightblue; 
+  font-family: "Courier";
+  font-size: 60px;
+  font-weight: bold;
+  word-wrap: break-word;
+  }
+
+#sideBar{
+  position: fixed;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+  height: 100%;
+  width: 33%;
+  top: 0%;
+  left: 0%;
+  background-color: rgb(66, 64, 64);
+  color: white;
+  font-size: 50px;
+  display: block;
+  }
+
+.contents {
+
+  padding-top: 5%;
+  padding-bottom: 0px;
+  }
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+  width: 60%;
+  height: 60%;
+  }
+
+td{
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 65px;
+  border: 2px solid rgb(212, 79, 70);
+  }
+
+#sideInput {
+  width: 40%;
+  }
+
+#shuffle {
+  font-size: 25px;
+  }
+
+#shuffleRange {
+  width: 30%;
+  }

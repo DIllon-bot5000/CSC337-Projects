@@ -1,0 +1,105 @@
+/*
+Name: Dillon Barr
+File: userPage.css
+Course: CSC 337
+Assignment: Final Project
+Purpose: This file contains the css used to style the various user pages
+*/
+html {
+    min-height: 100%;
+    overflow-y: auto;
+}
+body {
+    overflow-y: auto;
+    margin: 0;
+    background-color: gray;
+}
+
+.bannerPics {
+    position: fixed;
+    height: 15%;
+    width: 25%;
+}
+
+#nintendo {
+    margin-left: 0;
+}
+
+#xbox {
+    margin-left: 25%;
+}
+
+#playstation {
+    margin-left: 50%;
+}
+
+#pc {
+    right: 0;
+}
+
+#sideBar {
+    text-align: center;
+    font-size: 35px;
+    position: fixed;
+    left: 0%;
+    top: 20%;
+    width: 20%;
+    height: 100%;
+    background-color: rgb(133, 133, 141);
+    border: 2px solid black;
+}
+
+#main {
+    font-size: 30px;
+    position: fixed;
+    left: 20.2%;
+    top: 20%;
+    height: 100%;
+    width: 80%;
+    overflow-y: auto;
+    background-color: rgb(133, 133, 141);
+    border: 2px solid black;
+}
+
+.userButtons {
+    margin-left: 20%;;
+}
+
+#userBar {
+    position: fixed;
+    right: 0;
+    top: 20%;
+    height: 100%;
+    width: 10%;
+    border: 2px solid black;
+    text-align: center;
+}
+
+.editButtons {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#newRev, #editRev, #editMe, #activity, #gameRev, #aboutMe  {
+    font-size: 20px;
+}
+
+#output {
+    margin-left: 3%;
+    top: 30%;
+    margin-top: 5%;
+    height: 100%;
+    width: 83%;
+    overflow-y: auto;
+    background-color:  rgb(133, 133, 141);
+}
+
+.reviews {
+    width: 60%;
+    height: 40%;
+    border: 1px solid black;
+    margin-top: 2%;
+    margin-left: 10%;
+    padding-top: 10px;
+    padding-left: 10px;
+}

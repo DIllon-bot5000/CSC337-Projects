@@ -1,0 +1,150 @@
+/*
+Name: Dillon Barr
+File: styleB.css
+Class: CSC 337 Web Programming
+Purpose: This is the css file used to satisfy the requirements for style B. The nav bar
+and header are in the middle third of the screen, the products flank the header and nav,
+the text wraps nicely, all elements scale with the screen, nav links are centered and the 
+logo is right of the company name.
+*/
+
+body {
+  height: 100%;
+  margin: 0px;
+  }
+
+html {
+  height: 100%;
+  }
+
+#header {
+  position: fixed;
+  margin-left: auto;
+  margin-right: auto;
+  top: 0;
+  left: 33%;
+  align: center;
+  height: 30%;
+  width: 34%;
+  background-color: rgb(6, 108, 191);
+  font-size: 30px;
+  text-align: center;
+  color: yellow;
+  display: inline-block;
+  }
+
+#pricecoLogo {
+
+  display: inline-block;
+  width: 30%;
+  float: left; 
+  height: 60%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  }
+
+#content {
+  display: inline-block;
+  height: 100%;
+  }
+
+#productsColA {
+  left: 0px;
+  top: 0px;
+  width: 33%;
+  height: 100%; 
+  background-color: rgb(114, 215, 252);
+  display: inline-block;
+  text-align: center;
+  overflow: auto;
+  }
+
+#productsColB {
+  float: right;
+  
+  width: 33%;
+  height: 100%;
+  background-color: rgb(114, 215, 252);
+  display: inline-block;
+  text-align: center;
+  overflow: auto;
+  }
+
+.productImg {
+  padding-top: 1%;
+  padding-bottom: 1%;
+  height: 40%;
+  width: 40%;
+  }
+
+.productDesc {
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 2%;
+  margin-right: 2%;
+  }
+
+#navigation {
+  bottom: 0;
+  left: 33%;
+  position: fixed;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 34%;
+  height: 70%;
+  background-color: rgb(87, 195, 235);
+  text-align: center;
+  }
+
+.navButton {
+  display: block;
+  font-size: 35px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  }
+
+.styleButton {
+  background-color: grey;
+  color: black;
+  position: fixed;
+  text-align: center;
+  vertical-align: center;
+  padding-left: 2%;
+  padding-right: 2%;
+  opacity: 0.6;
+}
+
+#styleA {
+  bottom: 0px;
+  left: 0px;
+  display: inline-block;
+  padding-top: 25px;
+  height: 50px;
+  width: 50px;
+  margin: 10px;
+  
+}
+
+#styleB { 
+  bottom: 0px;
+  left: 150px;
+  display: inline-block;
+  padding-top: 25px;
+  height: 50px;
+  width: 50px;
+  margin: 10px;
+}
+
+#styleC {
+  bottom: 0px;
+  left: 300px;
+  display: inline-block;
+  padding-top: 25px;
+  height: 50px;
+  width: 50px;
+  margin: 10px;
+}
+

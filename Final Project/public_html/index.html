@@ -1,0 +1,63 @@
+<!--
+    Name: Dillon Barr
+    File: index.html
+    Course: CSC 337
+    Assignment: Final Project
+    Purpose: This file contains the html used to display the home page of the app.
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Home</title>
+        <meta charset="UTF-8">
+        <link rel = "stylesheet" type = "text/css" href = "css/indexStyle.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src ="js/final.js"></script>
+    </head>
+    <body onload = "checkLogin(), viewThreads()">
+        <div class = "bannerPics" id = "nintendo"><img src = "img/nintendo.jpg" alt = "Nintendo" height = "200" width = "500"> </div>
+        <div class = "bannerPics" id = "xbox"><img src = "img/xbox.jpg" alt = "Xbox" height = "200" width = "500"></div>
+        <div class = "bannerPics" id = "playstation"><img src = "img/playstation.jpg" alt = "Playstation" height = "200" width = "500"></div>
+        <div class = "bannerPics" id = "pc"><img src = "img/pcgaming.png" alt = "PC" height = "200" width = "500"></div>
+        <div id = "sideBar">Top Chatrooms <br>
+            <br>
+            <div id = "FPS"><a href= "./chatroom.html?name=FPS" onclick = "saveInfo()">FPS</a></div>
+            <br>
+            <div id = "MMO"><a href= "./chatroom.html?name=MMO" onclick = "saveInfo()">MMO</a></div>
+            <br>
+            <div id = "FightingGames"><a href= "./chatroom.html?name=fightinggames" onclick = "saveInfo()">Fighting Games</a></div>
+            <br>
+            <div id = "All"><a href= "./chatDirectory.html" onclick = "saveInfo()">View all chatrooms</a></div>
+            <br>
+            <div> <a href= "./index.html">Home</a> </div>
+        </div>
+        <div id = "main">
+            <input type = "text" name = "searchBar" id = "searchBar">
+            <button type = "button" onclick = "search()" id = "search">Search</button>
+            <select name = "filter" id = "filter">
+                <option value = "threads"> Threads</option>
+                <option value = "users"> Users</option>
+            </select>
+            <button type = "button" name = "create" id = "createNew" onclick = "window.location.href = 'createThread.html'">Create new post</button>
+            <div id = "threadsArea"></div>
+        </div>
+        <div id = "loginBox">
+            <div class = "loginArea">
+                <label for = "username">Username:</label>
+                <input type = "text" name = "username" id = "username">
+            </div>
+            <br>
+            <div class = "loginArea">
+                <label for = "password"> Password: </label>
+                <input type = "password" name = "password" id = "password">
+            </div> 
+            <div>
+                <button type = "button" class = "loginButton" onclick = "login()">Log in</button>
+            </div>  
+            <br> 
+            <div>
+                <button type  = "button" class = "loginButton" onclick = "window.location.href = 'createAccount.html'">Create Account</button>
+            </div>
+        </div>
+    </body>
+</html>

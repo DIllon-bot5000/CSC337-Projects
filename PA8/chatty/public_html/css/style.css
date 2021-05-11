@@ -1,0 +1,37 @@
+/*
+Name: Dillon Barr
+File: style.css
+Course: CSC 337
+Purpose: This file contains the css used to style the Chatty program for PA8. With this css the page
+is styled to have two distinct areas with different colors taking up the entirety of the screen as well
+as properly aligned input fields.
+*/
+
+body {
+    margin: 0;
+}
+
+#output {
+    height: 70%;
+    background-color: lightgreen;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    overflow: scroll;
+}
+
+#inputArea {
+    height: 30%;
+    bottom: 0;
+    position: fixed;
+    left: 0;
+    text-align: left;
+    background-color: darkgreen;
+    width: 100%;
+}
+
+.userInput {
+    margin-left: 2%;
+    margin-top: 2%;
+}

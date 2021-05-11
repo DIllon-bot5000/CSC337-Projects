@@ -1,0 +1,94 @@
+/*
+Name: Dillon Barr
+File: style.css
+Class: CSC 337 Web Programming
+Purpose: This css file contains all the style elements for the index.html and paradiselost.html files
+required for PA2. Inside this file I customize colors, fonts, font sizes, margins, and borders for the 
+various elements displayed on the pages.
+*/
+div {
+  font-size: 45px;
+  margin-left: 0%;
+  margin-right: 0%;
+  width: 100%;
+  text-align: center;
+  }
+
+p {
+  font-size: 30px;
+  color: white;
+  margin: 25px 100px 25px 100px;
+  text-align: center;
+  }
+
+img {
+  border: 10px solid white;
+  margin-top: 20px;
+  }
+
+#danteTable {
+  border-collapse: collapse;
+  text-align: center;
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25;
+  border: 5px solid black;
+  }
+
+.danteTD {
+  font-size: 40px;
+  border: 1px solid black
+  }
+
+#danteTitle {
+  font-size: 25px;
+  background-color: orange;
+}
+
+#miltonTitle {
+  background-color: blue;
+  }
+
+.danteButton {
+  font-size: 25px;
+  text-color: black;
+}
+
+#pageNav {
+  background-color: red;
+  }
+
+#danteBody {
+  background-color: rgb(112,6,14);
+  }
+
+#miltonBody {
+  background-color: rgb(12,87,97);
+}
+
+.miltonButton {
+  font-size 25px;
+  text-color: white;
+}
+
+#milton {
+  text-color: black;
+  font-family: "Arial Black";
+}
+
+#miltonNav {
+  background-color: rgb(20,140,156);
+}
+
+#miltonTable {
+  border-collapse: collapse;
+  text-align: center;
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25;
+  border: 10px solid white;
+  }
+
+.miltonTD {
+  font-size: 40px;
+  border: 2px dotted white;

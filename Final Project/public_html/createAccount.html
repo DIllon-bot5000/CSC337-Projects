@@ -1,0 +1,61 @@
+<!--
+    Name: Dillon Barr
+    File: createAccount.html
+    Course: CSC 337
+    Assignment: Final Project
+    Purpose: This file contains the html used to display a page when creating a new account on the app.
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Create Account</title>
+        <meta charset="UTF-8">
+        <link rel = "stylesheet" type = "text/css" href = "css/indexStyle.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src ="js/final.js"></script>
+    </head>
+    <body>
+        <div class = "bannerPics" id = "nintendo"><img src = "img/nintendo.jpg" alt = "Nintendo" height = "200" width = "500"> </div>
+        <div class = "bannerPics" id = "xbox"><img src = "img/xbox.jpg" alt = "Xbox" height = "200" width = "500"></div>
+        <div class = "bannerPics" id = "playstation"><img src = "img/playstation.jpg" alt = "Playstation" height = "200" width = "500"></div>
+        <div class = "bannerPics" id = "pc"><img src = "img/pcgaming.png" alt = "PC" height = "200" width = "500"></div>
+        <div id = "sideBar">Top Chatrooms <br>
+            <br>
+            <div><a href= "./chatroom.html"onclick = "saveInfo()">FPS</a></div>
+            <br>
+            <div><a href= "./chatroom.html"onclick = "saveInfo()">MMO</a></div>
+            <br>
+            <div><a href= "./chatroom.html"onclick = "saveInfo()">Fighting Games</a></div>
+            <br>
+            <div><a href= "./chatDirectory.html"onclick = "saveInfo()">View all chatrooms</a></div>
+            <br>
+            <div> <a href= "./index.html">Home</a> </div>
+        </div>
+        <div id = "main">
+            <form>
+                <div class = "inputArea">
+                    <label for = "username">Username</label>
+                    <input type = "text" name = "username" id = "username" required>
+                </div>
+                <div class = "inputArea">
+                    <label for = "password">Password</label>
+                    <input type = "password" name = "password" id = "password" required>
+                </div>
+                <div class = "inputArea">
+                    <label for = "aboutMe"> About me</label>
+                    <textarea id = "aboutMe" rows = "10" cols = "100"></textarea>
+                </div>
+                <div class = "inputArea">
+                    Profile:
+                    <label for = "public">Public</label>
+                    <input type = "radio" id = "public" name = "security" value = "true" required>
+                    <label for = "private">Private</label>
+                    <input type = "radio" id = "private" name = "security" value = "false" required>
+                </div>
+                <div class = "inputArea">
+                    <button type = "button" onclick= "addUser()" id = "addUserButton">Add User</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

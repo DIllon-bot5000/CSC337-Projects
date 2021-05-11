@@ -1,0 +1,77 @@
+<!--
+    Name: Dillon Barr
+    File: chatDirectory.html
+    Course: CSC 337
+    Assignment: Final Project
+    Purpose: This file contains the html used to display the directory of various chatrooms on the site.
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Chat Directory</title>
+        <meta charset="UTF-8">
+        <link rel = "stylesheet" type = "text/css" href = "css/chatDir.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src ="js/final.js"></script>
+    </head>
+    <body>
+        <div class = "bannerPics" id = "nintendo"><img src = "img/nintendo.jpg" alt = "Nintendo" height = "200" width = "500"> </div>
+        <div class = "bannerPics" id = "xbox"><img src = "img/xbox.jpg" alt = "Xbox" height = "200" width = "500"></div>
+        <div class = "bannerPics" id = "playstation"><img src = "img/playstation.jpg" alt = "Playstation" height = "200" width = "500"></div>
+        <div class = "bannerPics" id = "pc"><img src = "img/pcgaming.png" alt = "PC" height = "200" width = "500"></div>
+        <div id = "sideBar">Top Chatrooms <br>
+            <br>
+            <div><a href= "./chatroom.html?name=FPS">FPS</a></div>
+            <br>
+            <div><a href= "./chatroom.html?name=MMO">MMO</a></div>
+            <br>
+            <div><a href= "./chatroom.html?name=fightinggames">Fighting Games</a></div>
+            <br>
+            <div><a href= "./chatDirectory.html">View all chatrooms</a></div>
+            <br>
+            <div> <a href= "./index.html">Home</a> </div>
+        </div>
+        <div id = "main">
+            <div class = "chatLists" id = "general">
+                General chats
+                <ul>
+                    <li><a href= "./chatroom.html?name=MMO">MMO</a></li>
+                    <li> <a href= "./chatroom.html?name=FPS">FPS</a> </li>
+                    <li> <a href= "./chatroom.html?name=fightinggames">Fighting Games</a> </li>
+                    <li> <a href= "./chatroom.html?name=videogames">Video Games</a> </li>
+                    <li> <a href= "./chatroom.html?name=LFG">LFG</a> </li>
+                </ul>
+            </div>
+            <div class = "chatLists" id = "MMO">
+                MMO chats
+                <ul>
+                    <li> <a href= "./chatroom.html?name=FFIXV">FFXIV</a> </li>
+                    <li> <a href= "./chatroom.html?name=WOW">WOW</a> </li>
+                    <li> <a href= "./chatroom.html?name=Destiny">Destiny</a> </li>
+                    <li> <a href= "./chatroom.html?name=Warframe">Warframe</a> </li>
+                    <li> <a href= "./chatroom.html?name=Runescape">Runescape</a> </li>
+                </ul>
+            </div>
+            <div class = "chatLists" id = "FPS">
+                FPS chats
+                <ul>
+                    <li> <a href= "./chatroom.html?name=COD">COD</a> </li>
+                    <li> <a href= "./chatroom.html?name=Battlefield">Battlefield</a> </li>
+                    <li> <a href= "./chatroom.html?name=Battlefront">Battlefront</a> </li>
+                    <li> <a href= "./chatroom.html?name=Overwatch">Overwatch</a> </li>
+                    <li> <a href= "./chatroom.html?name=Apex">Apex Legends</a> </li>
+                </ul>
+            </div>
+            <div class = "chatLists" id = "fightingGames">
+                Fighting game chats
+                <ul>
+                    <li> <a href= "./chatroom.html?name=StreetFighter">Street Fighter</a> </li>
+                    <li> <a href= "./chatroom.html?name=Dragonball">Dragonball Fighterz</a> </li>
+                    <li> <a href= "./chatroom.html?name=MK">Mortal Kombat</a></li>
+                    <li> <a href= "./chatroom.html?name=Tekken">Tekken</a> </li>
+                    <li> <a href= "./chatroom.html?name=GuilyGear">Guilty Gear</a> </li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>

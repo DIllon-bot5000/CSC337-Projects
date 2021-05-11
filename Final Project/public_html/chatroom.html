@@ -1,0 +1,40 @@
+<!--
+    Name: Dillon Barr
+    File: chatroom.html
+    Course: CSC 337
+    Assignment: Final Project
+    Purpose: This file contains the html used to display a chatroom on the application.
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Chatroom</title>
+        <meta charset="UTF-8">
+        <link rel = "stylesheet" type = "text/css" href = "css/chatroom.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src ="js/final.js"></script>
+    </head>
+    <body onload = "loadChat(); setInterval(updateChat, 1000)">
+        <div class = "bannerPics" id = "nintendo"><img src = "img/nintendo.jpg" alt = "Nintendo" height = "200" width = "500"> </div>
+        <div class = "bannerPics" id = "xbox"><img src = "img/xbox.jpg" alt = "Xbox" height = "200" width = "500"></div>
+        <div class = "bannerPics" id = "playstation"><img src = "img/playstation.jpg" alt = "Playstation" height = "200" width = "500"></div>
+        <div class = "bannerPics" id = "pc"><img src = "img/pcgaming.png" alt = "PC" height = "200" width = "500"></div>
+        <div id = "sideBar">Top Chatrooms <br>
+            <br>
+            <div><a href= "./chatroom.html?name=FPS">FPS</a></div>
+            <br>
+            <div><a href= "./chatroom.html?name=MMO">MMO</a></div>
+            <br>
+            <div><a href= "./chatroom.html?name=fightinggames">Fighting Games</a></div>
+            <br>
+            <div><a href= "./chatDirectory.html">View all chatrooms</a></div>
+            <br>
+            <div> <a href= "./index.html">Home</a> </div>
+        </div>
+        <div id = "main"> </div>
+        <div id = "input">
+            <textarea id = "messageArea" rows = "10" cols = "50"></textarea>
+            <button type = "button" onclick = "sendMessage()" id = "send">Send message</button>
+        </div>
+    </body>
+</html>

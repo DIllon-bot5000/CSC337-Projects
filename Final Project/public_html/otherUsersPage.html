@@ -1,0 +1,51 @@
+<!--
+    Name: Dillon Barr
+    File: otherUsersPage.html
+    Course: CSC 337
+    Assignment: Final Project
+    Purpose: This file contains the html used to display a profile page of a non-logged in user.
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Profile</title>
+        <meta charset="UTF-8">
+        <link rel = "stylesheet" type = "text/css" href = "css/userPage.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src ="js/final.js"></script>
+    </head>
+    <body onload = "isPrivate()">
+        <div class = "bannerPics" id = "nintendo"><img src = "img/nintendo.jpg" alt = "Nintendo" height = "200" width = "500"> </div>
+        <div class = "bannerPics" id = "xbox"><img src = "img/xbox.jpg" alt = "Xbox" height = "200" width = "500"></div>
+        <div class = "bannerPics" id = "playstation"><img src = "img/playstation.jpg" alt = "Playstation" height = "200" width = "500"></div>
+        <div class = "bannerPics" id = "pc"><img src = "img/pcgaming.png" alt = "PC" height = "200" width = "500"></div>
+        <div id = "sideBar">Top Chatrooms <br>
+            <br>
+            <div><a href= "./chatroom.html?name=FPS">FPS</a></div>
+            <br>
+            <div><a href= "./chatroom.html?name=MMO">MMO</a></div>
+            <br>
+            <div><a href= "./chatroom.html?name=fightinggames">Fighting Games</a></div>
+            <br>
+            <div><a href= "./chatDirectory.html">View all chatrooms</a></div>
+            <br>
+            <div> <a href= "./index.html">Home</a> </div>
+        </div>
+        <div id = "main">
+            <span class = "userButtons">
+                <button type = "button" onclick = "otherThreads(), otherComments()" id = "activity">Activity</button>
+            </span>
+            <span class = "userButtons">
+                <button type = "button" onclick = "otherReviews()" id = "gameRev">Game Reviews</button>
+            </span>
+            <span class = "userButtons">
+                <button type = "button" onclick = "otherAboutMe()" id = "aboutMe">About Me</button>
+            </span>
+            <div id = "output"></div>
+        </div>
+        <div id = "userBar">
+
+            </div>
+        </div>        
+    </body>
+</html>

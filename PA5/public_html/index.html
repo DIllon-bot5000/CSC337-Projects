@@ -1,0 +1,78 @@
+<!--
+Name: Dillon Barr
+File: index.html
+Assignment: PA5 Welcome to the Jumble
+Class: CSC 337 Web Programming
+Purpose: This file contains the html used to display the required
+elements for PA5 including one section display the text post Caesar cipher,
+one section displaying text after the square cipher and the input section.
+-->
+<!DOCTYPE html>
+  <html lang = "en">
+    <head>
+      <title> Welcome to the Jumble </title>
+      <meta charset = "UTF-8">
+      <link rel = "stylesheet" type = "text/css" href = "./css/style.css">
+    </head>
+    <body>
+      <div id = "top"></div>
+      <div id = "bottom"></div>
+      <div id = "sideBar">
+        <div class = "contents">
+        Welcome to the Jumble
+        </div>
+        <div class= "contents">
+          <input oninput = "readText()" type = "text" id = "sideInput">
+        </div>
+        <button onclick = "clearText()" type = "button" id = "clear"> Clear </button>
+        <div class = "contents">
+          <span id = "slideValue"></span>
+          <input type = "range" min = "0" max = "26" value = "0" id = "shuffleRange">
+        </div>
+        <div class = "contents">
+          <button onclick="updateTable()" type = "button" id = "shuffle"> Update Square </button>
+        </div>
+        <div class = "contents">
+          <table>
+            <tr>
+              <td>a</td>
+              <td>b</td>
+              <td>c</td>
+              <td>d</td>
+              <td>e</td>
+            </tr>
+            <tr>
+              <td>f</td>
+              <td>g</td>
+              <td>h</td>
+              <td>i</td>
+              <td>j</td>
+            </tr>
+            <tr>
+              <td>k</td>
+              <td>l</td>
+              <td>m</td>
+              <td>n</td>
+              <td>o</td>
+            </tr>
+            <tr>
+              <td>p</td>
+              <td>q</td>
+              <td>r</td>
+              <td>s</td>
+              <td>t</td>
+            </tr>
+            <tr>
+              <td>u</td>
+              <td>v</td>
+              <td>w</td>
+              <td>x</td>
+              <td>y</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <script src="./javascript/myscript.jsx"></script>
+    </body>
+  </html>  
+

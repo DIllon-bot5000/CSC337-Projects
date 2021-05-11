@@ -1,0 +1,55 @@
+<!--
+    Name: Dillon Barr
+    File: userPage.html
+    Course: CSC 337
+    Assignment: Final Project
+    Purpose: This file contains the html used to display a logged in user's profile page.
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>User Profile</title>
+        <meta charset="UTF-8">
+        <link rel = "stylesheet" type = "text/css" href = "css/userPage.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src ="js/final.js"></script>
+    </head>
+    <body>
+        <div class = "bannerPics" id = "nintendo"><img src = "img/nintendo.jpg" alt = "Nintendo" height = "200" width = "500"> </div>
+        <div class = "bannerPics" id = "xbox"><img src = "img/xbox.jpg" alt = "Xbox" height = "200" width = "500"></div>
+        <div class = "bannerPics" id = "playstation"><img src = "img/playstation.jpg" alt = "Playstation" height = "200" width = "500"></div>
+        <div class = "bannerPics" id = "pc"><img src = "img/pcgaming.png" alt = "PC" height = "200" width = "500"></div>
+        <div id = "sideBar">Top Chatrooms <br>
+            <br>
+            <div><a href= "./chatroom.html?name=FPS">FPS</a></div>
+            <br>
+            <div><a href= "./chatroom.html?name=MMO">MMO</a></div>
+            <br>
+            <div><a href= "./chatroom.html?name=fightinggames">Fighting Games</a></div>
+            <br>
+            <div><a href= "./chatDirectory.html">View all chatrooms</a></div>
+            <br>
+            <div> <a href= "./index.html">Home</a> </div>
+        </div>
+        <div id = "main">
+            <span class = "userButtons">
+                <button type = "button" onclick = "userThreads(), userComments()" id = "activity">Activity</button>
+            </span>
+            <span class = "userButtons">
+                <button type = "button" onclick = "userReviews()" id = "gameRev">Game Reviews</button>
+            </span>
+            <span class = "userButtons">
+                <button type = "button" onclick = "userAboutMe()" id = "aboutMe">About Me</button>
+            </span>
+            <div id = "output"></div>
+        </div>
+        <div id = "userBar">
+            <div class = "editButtons">
+            <button type = "button" onclick = "window.location.href = 'reviewCreation.html'" id = "newRev">New Review</button>
+            </div>
+            <div class = "editButtons">
+                <button type = "button" onclick = "editMe()" id = "editMe">Edit About Me</button>
+            </div>
+        </div>        
+    </body>
+</html>

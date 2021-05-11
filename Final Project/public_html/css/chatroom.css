@@ -1,0 +1,70 @@
+/*
+Name: Dillon Barr
+File: chatroom.css
+Course: CSC 337
+Assignment: Final Project
+Purpose: This file contains the css used to style the chatroom.html page
+*/
+
+body {
+    margin: 0;
+    background-color: gray;
+}
+
+.bannerPics {
+    position: fixed;
+    height: 15%;
+    width: 25%;
+}
+
+#nintendo {
+    margin-left: 0;
+}
+
+#xbox {
+    margin-left: 25%;
+}
+
+#playstation {
+    margin-left: 50%;
+}
+
+#pc {
+    right: 0;
+}
+
+#sideBar {
+    text-align: center;
+    font-size: 35px;
+    position: fixed;
+    left: 0%;
+    top: 20%;
+    width: 20%;
+    height: 100%;
+    background-color: rgb(133, 133, 141);
+    border: 2px solid black;
+}
+
+#main {
+    font-size: 30px;
+    position: fixed;
+    left: 20.2%;
+    top: 20%;
+    height: 50%;
+    width: 80%;
+    overflow-y: auto;
+    background-color: rgb(133, 133, 141);
+    border: 2px solid black;
+}
+
+#input {
+    margin-top: 10px;
+    margin-left: 5%;
+    position: fixed;
+    left: 20.2%;
+    bottom: 10%;
+}
+
+#send {
+    font-size: 40px;
+}

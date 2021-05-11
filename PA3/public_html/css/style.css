@@ -1,0 +1,58 @@
+/*
+Name: Dillon Barr
+File: style.css
+Assignment: PA3 Sign-Up Sheet
+Class: CSC 337 Web Programming
+Purpose: This file contains the CSS used to style the index.html
+file for this project. In this file I modify font colors, sizes, families,
+margins, padding, text alignment and borders.
+*/
+body {
+  margin: 0%;
+  background-color: rgb(255, 252, 46);
+  }
+
+#title {
+  width: 100%;
+  font-size: 50px;
+  background-color: rgb(46, 224, 255);
+  }
+
+.headers {
+  padding-top: 10px;
+  padding-left: 5%;
+  padding-right: 5%;
+  }
+
+#info {
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: center;
+  font-size: 30px;
+  font-family: "Times New Roman";
+  }
+
+form {
+  text-align: center;
+  font-family: "Verdana";
+  font-size: 20px;
+  }
+
+#gym {
+  padding-top: 10px;
+  }
+
+input, textarea {  
+  border: 5px solid rgb(46,224,255);
+  border-radius: 4px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  }
+
+#firstName {
+  text-transform: uppercase;
+  }
+
+#lastName {
+  text-transform: uppercase;
+  }

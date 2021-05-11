@@ -1,0 +1,27 @@
+body {
+  background-color: rgb(47,140,173);
+  }
+
+P, li {
+  font-size: 20px;
+  font-family: Book Antiqua;
+  }
+
+h1{
+  font-size: 40px;
+  font-family: Arial Black;
+  }
+
+h2 {
+  font-size: 35;
+  font-family: Arial Black;
+  }
+
+li{
+  line-height: 2.0;
+  font-size: 30px;
+  }
+
+.charList {
+  list-style-type: none;
+  }

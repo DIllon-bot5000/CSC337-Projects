@@ -1,0 +1,58 @@
+<!--
+    Name: Dillon Barr
+    File: reviewCreation.html
+    Course: CSC 337
+    Assignment: Final Project
+    Purpose: This file contains the html used to display the page for new reviews.
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>New Review</title>
+        <meta charset="UTF-8">
+        <link rel = "stylesheet" type = "text/css" href = "css/indexStyle.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src ="js/final.js"></script>
+    </head>
+    <body>
+        <div class = "bannerPics" id = "nintendo"><img src = "img/nintendo.jpg" alt = "Nintendo" height = "200" width = "500"> </div>
+        <div class = "bannerPics" id = "xbox"><img src = "img/xbox.jpg" alt = "Xbox" height = "200" width = "500"></div>
+        <div class = "bannerPics" id = "playstation"><img src = "img/playstation.jpg" alt = "Playstation" height = "200" width = "500"></div>
+        <div class = "bannerPics" id = "pc"><img src = "img/pcgaming.png" alt = "PC" height = "200" width = "500"></div>
+        <div id = "sideBar">Top Chatrooms <br>
+            <br>
+            <div><a href= "./chatroom.html?name=FPS">FPS</a></div>
+            <br>
+            <div><a href= "./chatroom.html?name=MMO">MMO</a></div>
+            <br>
+            <div><a href= "./chatroom.html?name=fightinggames">Fighting Games</a></div>
+            <br>
+            <div><a href= "./chatDirectory.html">View all chatrooms</a></div>
+            <br>
+            <div> <a href= "./index.html">Home</a> </div>
+        </div>
+        <div id = "main">
+            <form>
+                <div class = "inputArea">
+                    <label for = "game">Game: </label>
+                    <input type = "text" name = "game" id = "game">
+                </div>
+                <div class = "inputArea">
+                    <label for = "hours">Hours Played: </label>
+                    <input type = "number" name = "hours" id = "hours">
+                </div>
+                <div class = "inputArea">
+                    <label for = "review"> My review: </label>
+                    <textarea id = "review" rows = "10" cols = "100"></textarea>
+                </div>
+                <div class = "inputArea">
+                    <span id = "slideValue"></span>
+                    <input type = "range" min = "0" max = "10" value = "0" id = "score" oninput = "setSlider()">
+                </div>
+                <div class = "inputArea">
+                    <button type = "button" onclick= "addReview()" id = "addReviewButton">Add Review</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,64 @@
+<!--
+    Name: Dillon Barr
+    File: viewThread.html
+    Course: CSC 337
+    Assignment: Final Project
+    Purpose: This file contains the html used to display a page containing a thread and comments.
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>View Thread</title>
+        <meta charset="UTF-8">
+        <link rel = "stylesheet" type = "text/css" href = "css/threadStyle.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src ="js/final.js"></script>
+    </head>
+    <body onload = "checkLogin(), loadThread()">
+        <div class = "bannerPics" id = "nintendo"><img src = "img/nintendo.jpg" alt = "Nintendo" height = "200" width = "500"> </div>
+        <div class = "bannerPics" id = "xbox"><img src = "img/xbox.jpg" alt = "Xbox" height = "200" width = "500"></div>
+        <div class = "bannerPics" id = "playstation"><img src = "img/playstation.jpg" alt = "Playstation" height = "200" width = "500"></div>
+        <div class = "bannerPics" id = "pc"><img src = "img/pcgaming.png" alt = "PC" height = "200" width = "500"></div>
+        <div id = "sideBar">Top Chatrooms <br>
+            <br>
+            <div><a href= "./chatroom.html"onclick = "saveInfo()">FPS</a></div>
+            <br>
+            <div><a href= "./chatroom.html"onclick = "saveInfo()">MMO</a></div>
+            <br>
+            <div><a href= "./chatroom.html"onclick = "saveInfo()">Fighting Games</a></div>
+            <br>
+            <div><a href= "./chatDirectory.html"onclick = "saveInfo()">View all chatrooms</a></div>
+            <br>
+            <div> <a href= "./index.html">Home</a> </div>
+        </div>
+        <div id = "main">
+            <div id = "original">
+            </div>
+            <div id = "comment">
+                <textarea id = "commentArea" rows="10" cols="100"></textarea>
+            </div>
+            <div id = "commentButtonArea">
+                <button type = "button" onclick = "comment()" id = "commentButton">Post</button>
+            </div>
+            <div id = "commentBlock">No comments yet... You can be the first!</div>
+        </div>
+        <div id = "loginBox">
+            <div class = "loginArea">
+                <label for = "username">Username:</label>
+                <input type = "text" name = "username" id = "username">
+            </div>
+            <br>
+            <div class = "loginArea">
+                <label for = "password"> Password: </label>
+                <input type = "password" name = "password" id = "password">
+            </div> 
+            <div>
+                <button type = "button" class = "loginButton" onclick = "login()">Log in</button>
+            </div>  
+            <br> 
+            <div>
+                <button type  = "button" class = "loginButton" onclick = "createAccount()">Create Account</button>
+            </div>
+        </div>
+    </body>
+</html>
