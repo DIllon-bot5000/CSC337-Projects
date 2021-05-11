@@ -1,0 +1,42 @@
+<!--
+Name: Dillon Barr
+File: home.html
+Course: CSC 337
+Purpose: This file contains the basic HTML required for PA10 Ostaa Part 2. This is the home page of the 
+site after a successful login. The left side contains a welcome message for the user and multiple buttons
+for the options the user has on the site. The right side of the site populate with item listings 
+depending on the button the user has selected on the left.   
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Home</title>
+        <meta charset="UTF-8">
+        <link rel = "stylesheet" type = "text/css" href = "css/homestyle.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src ="js/ostaaFunctions2.js"></script>
+    </head>
+    <body onload = "updateMessage()">
+        <div id = "header">
+            <h1>Ostaa</h1>
+        </div>
+        <div id = "userSide">
+            <div id = "greeting"></div>
+            <div class = "userOpt">
+                <input type = "text" name = "searchBar" id = "searchBar">
+                <button type = "button" onclick = "searchListings()" name = "searchItems" id = "searchItems" >Search Listings</button>
+            </div>  
+            <div class = "userOpt">
+                <button type = "button" name= "viewList" id = "viewList" onclick = "viewListings()">View Your Listings</button>
+            </div>
+            <div class = "userOpt">
+                <button type = "button" name= "purchaseList" id = "purchaseList" onclick = "viewPurchases()">View Your Purchases</button>
+            </div>
+            <div class = "userOpt">
+                <button type = "button" name = "postItem" id = "postItem" onclick = "window.location.href = 'post.html'">Create a Listing</button>
+            </div>  
+        </div>
+        <div id = "outputArea">
+        </div>
+    </body>
+</html>

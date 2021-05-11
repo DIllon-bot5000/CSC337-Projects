@@ -1,0 +1,53 @@
+<!--
+Name: Dillon Barr
+File: index.html
+Course: CSC 337
+Purpose: This file contains the basic HTML required for PA10 Ostaa Part 2. This entails
+two main areas, one for an exisiting user to login in and one area for a new user to 
+create an account.    
+-->
+
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>Ostaa</title>
+        <meta charset="UTF-8">
+        <link rel = "stylesheet" type = "text/css" href = "css/indexstyle.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src ="js/ostaaFunctions2.js"></script>
+    </head>
+    <body>
+        <h1>Ostaa</h1>
+        <h1>Login</h1>
+        <form>
+            <div class = "loginArea">
+                <label for = "username">Username</label>
+                <input type = "text" name = "username" id = "username">
+            </div>
+            <div class = "loginArea">
+                <label for = "password">Password</label>
+                <input type = "password" name = "password" id = "password">
+            </div>
+            <div class = "loginArea">
+                <button type = "button" onclick= "login()" id = "loginButton">Login</button>
+            </div>
+        </form>
+        <div id = "incorrectCred"></div>
+        <br>
+        <br>
+        <h1>Create Account</h1>
+        <form>
+            <div class = "createArea">
+                <label for = "nUser">Username</label>
+                <input type = "text" name = "nUser" id = "nUser">
+            </div>
+            <div class = "createArea">
+                <label for = "nPassword">Password</label>
+                <input type = "password" name = "nPassword" id = "nPassword">
+            </div>    
+            <div class = "createArea">
+                <button type = "button" onclick= "createAccount()" id = "addUserButton">Create</button>
+            </div>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,17 @@
+/*
+Name: Dillon Barr
+File: poststyle.css
+Course: CSC 337
+Purpose: This file contains the CSS used to style the post page
+of the Ostaa site. This CSS is used to set the color of the background
+and the spacing of the input areas.
+*/
+body {
+    margin: 0;
+    background-color: aqua;
+}
+
+.inputArea {
+    margin-left: 1%;
+    margin-bottom: 1%;
+}

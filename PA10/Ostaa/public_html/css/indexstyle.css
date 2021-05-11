@@ -1,0 +1,25 @@
+/*
+Name: Dillon Barr
+File: indexstyle.css
+Course: CSC 337
+Purpose: This file contains the CSS used to style the index page
+of the Ostaa site. This CSS is used to set the color of the background,
+the various font colors and the spacing of the input areas.
+*/
+
+body {
+    margin: 0;
+    background-color: aqua;
+}
+
+h1 {
+    color: darkblue;
+}
+.loginArea, .createArea {
+    margin-bottom: 1%;
+    padding-top: 1%;
+}
+
+#incorrectCred {
+    color: red;
+}

@@ -1,0 +1,56 @@
+<!--
+Name: Dillon Barr
+File: post.html
+Course: CSC 337
+Purpose: This file contains the basic HTML required for PA10 Ostaa Part 2. This page is
+for users wishing to upload a new item to be sold. It contains a form for the user
+to input the information required to post an item and a button to return to the home page.    
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Create a listing</title>
+        <meta charset="UTF-8">
+        <link rel = "stylesheet" type = "text/css" href = "css/poststyle.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src = "js/ostaaFunctions2.js"></script>
+    </head>
+    <body>
+        <h1>Ostaa</h1>
+        <div>
+            <h1>Add a Post</h1>
+        </div>
+        <form>
+            <div class = "inputArea">
+                <label for = "title">Title</label>
+                <input type = "text" name = "title" id = "title">
+            </div>
+            <div class = "inputArea">
+                <label for = "desc">Desc</label>
+                <input type = "text" name = "desc" id = "desc">
+            </div>
+            <div class = "inputArea">
+                <label for = "image">Image</label>
+                <input type = "text" name = "image" id = "image">
+            </div>
+            <div class = "inputArea">
+                <label for = "price">Price</label>
+                <input type = "number" name = "price" id = "price">
+            </div>
+            <div class = "inputArea">
+                <label for = "status">Status</label>
+                <input type = "text" name = "status" id = "status">
+            </div>
+        </form>
+            <div class = "inputArea">
+                <button type = "button" onclick= "addPosting()" id = "addItemButton">Add Item</button>
+            </div>
+            <div class = "inputArea">
+                <br>
+                <br>
+                <br>
+                <br>
+                <button type = "button" onclick= "window.location.href = 'home.html'" id = "homeButton">Home</button>
+            </div>
+    </body>
+</html>

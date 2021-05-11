@@ -1,0 +1,59 @@
+/*
+Name: Dillon Barr
+File: homestyle.css
+Course: CSC 337
+Purpose: This file contains the CSS used to style the home page
+of the Ostaa site. This CSS is used to set the color of the background,
+the various font colors, the spacing and layout of the user options on the
+left and the layout of the data output on the right.
+*/
+body {
+    margin: 0;
+}
+
+#header {
+    position: fixed;
+    height: 50%;
+    width: 100%;
+    background-color: aqua;
+    color: darkblue;
+    font-size: 45px;
+}
+
+#userSide {
+    position: fixed;
+    height: 80%;
+    width: 50%;
+    left: 0;
+    top: 20%;
+    background-color: chartreuse;
+    border: 1px solid black;
+}
+
+.userOpt, #greeting{
+    padding-top: 10%;
+    margin-left: 4%;
+    margin-bottom: 4%;
+}
+
+#outputArea {
+    position: fixed;
+    width: 50%;
+    height: 80%;
+    top: 20%;
+    right: 0;
+    background-color: chartreuse;
+    border: 1px solid black;
+    overflow: scroll;
+}
+
+.items {
+    width: 60%;
+    height: 40%;
+    border: 1px solid black;
+    margin-top: 2%;
+    margin-left: 10%;
+    padding-top: 10px;
+    padding-left: 10px;
+
+}
